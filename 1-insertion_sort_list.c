@@ -1,11 +1,7 @@
 #include "sort.h"
 /**
- * create_listint - Creates a doubly linked list from an array of integers
- *
- * @array: Array to convert to a doubly linked list
- * @size: Size of the array
- *
- * Return: Pointer to the first element of the created list. NULL on failure
+ * insertion_sort_list - Sorting algorithms
+ * @list: Array to convert to a doubly linked list
  */
 void insertion_sort_list(listint_t **list)
 {
@@ -13,7 +9,7 @@ void insertion_sort_list(listint_t **list)
 
 	tmp = (*list)->next;
 
-	while(tmp != NULL)
+	while (tmp != NULL)
 	{
 		while (tmp->prev != NULL && tmp->n < tmp->prev->n)
 		{
